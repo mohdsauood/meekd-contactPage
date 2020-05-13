@@ -5,6 +5,7 @@ const phone = document.querySelector('#phoneNo');
 const textArea = document.querySelector('#textArea');
 const submitButton = document.querySelector('#submit');
 let submitButtonFlag = false;
+const menuButton= document.querySelector('.menuButton');
 const redText = function (e) {
     e.srcElement.classList.add('red');
 }
@@ -85,11 +86,14 @@ submitButton.addEventListener('click', (e) => {
         e.preventDefault();
     }
 });
-
-
-
-
-
+menuButton.addEventListener('click',()=>{
+    const navElement=document.querySelector('nav ul');
+    navElement.classList.toggle('displayNav');
+    const navLi=document.querySelectorAll('nav li');
+    navLi.forEach((item)=>{
+        item.classList.add('displayBlock');
+    })
+})
 
 
 
