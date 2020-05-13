@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Meekd | Contact Us</title>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -29,24 +31,51 @@
     <section class="contact_section">
         <h2>Control</h2>
         <section class="contact_content">
-            <section class="contact_form"> 
+            <section class="contact_form">
                 <h6 class="contact_h6 crimson">Get In Touch With Meekd</h6>
-                <form>  
-                    <input id="name" type="text" placeholder="*Full name">
-                    <input id="email" type="text" placeholder="*Email">
-                    <input id="phoneNo" type="text" placeholder="*Phone">
-                    <textarea id="textArea" placeholder="*Message">
-                    </textarea>
-                    <button id="submit">SUBMIT NOW</button>
+                <form novalidate>
+                    <input id="name" type="text" placeholder="*Full name" maxlength="50" pattern="([A-Za-z\s])+" required>
+                    <input id="email" type="email" placeholder="*Email" required>
+                    <input id="phoneNo" type="text" placeholder="*Phone" minlength="9" maxlength="18" required pattern="([0-9+-])+">
+                    <textarea id="textArea" placeholder="*Message" maxlength="300" required></textarea>
+                    <button id="submit" class="submitButton hvr-fade">SUBMIT NOW</button>
                 </form>
             </section>
             <section class="contact_address">
                 <h6 class="contact_h6 gray">Meekd Office</h6>
-                <p>      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis asperiores necessitatibus fuga laudantium illum consectetur dolorum iure voluptatum provident possimus beatae, accusantium quod magnam ratione tenetur enim? Aliquid, iure!Loremlorem    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt unde voluptatum voluptate sapiente quidem quae vel numquam pariatur minus nisi veniam tempore eaque tenetur facere, ipsa amet expedita, eligendi perspiciatis.</p>
-          
+                <section class="contact_description">
+                    <h5>MEEKD</h5>
+                    <p>we are driven by a mission to build the world's safest and simplest Search Engine.</p>
+                </section>
+                <section class="contact_info">
+                    <div class="addressImg">
+                    rere<img src="/images/dubaiOffice.jpg" alt="dubaipicture"></div>
+                    <h5>MEEKD OFFICE :</h5>
+                    <p>1st Floor, Tower A5,<br>
+                    Dubai Digital Park, Silicon Oasis,<br>
+                    DUBAI                 
+                    </p>
+                    <div class="contact_buttons">
+                        <ul>
+                        <li>Mobile : +971 56 1222 712</li>
+                        <li>Email : info@meekd.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact_followus">
+                       <h6>Follow Us On</h5>
+                        <ul>
+                            <li>twitter</li>
+                             <li>facebook</li>
+                              <li>linkedin</li>
+                               <li>instagram</li>
+                        </ul>
+                    </div>
+                </section>
+
             </section>
         </section>
     </section>
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -10,7 +10,7 @@
 nav {
    height: 4.5vh;
    display: flex;
-   padding: 0 4vw;
+   padding: 0 7vw;
 }
 nav ul{
     align-self: center;
@@ -124,13 +124,23 @@ nav ul li:hover{
     height: 5vh;
     width:35vw;
     margin: 1.5vh 0;
-    border:2px solid crimson;
+    border:1.5px solid gray;
 }
 .contact_form form textarea{
     height: 15vh;
     width:35vw;
     margin: 1.5vh 0;
-    border:2px solid crimson;
+    border:1.5px solid gray;
+    padding: .5rem;
+}
+.contact_form form input:invalid{
+    color: red;
+}
+.message{
+    color: crimson;
+    text-shadow: text-shadow: 4px 3px 0px #7A7A7A, 2px 2px 2px rgba(206,89,55,0);
+    font-size: 1.4rem;
+    font-style: italic;
 }
 .crimson{
     color: crimson;
@@ -138,13 +148,56 @@ nav ul li:hover{
 .gray{
     color:darkgray;
 }
-
-#submit{
-    border: 2px solid crimson;
-    font-size: 1.4rem;
-    background-color: white;
-    width: 15vw;
+.red{
+    color: red;
 }
+
+.submitButton{
+    margin: 1.5vh 0;
+    border: 1.5px solid crimson;
+    font-size: .8rem;
+    background-color:white;
+    width: 18vw;
+    color: crimson;
+    padding: 2vh;
+    cursor: pointer;
+    letter-spacing: .2rem;
+}
+/*hover on button*/
+
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: crimson;
+  color: white;
+}
+
+.input_error{
+    color: red;
+    text-transform:capitalize;
+}
+
+/*address section*/
+
+.contact_description h5{
+    font-size: 3rem;
+}
+.contact_description p{
+    padding-left: 5vw;
+    font-size: 1.4rem;
+}
+
+
 
 
 
