@@ -11,10 +11,18 @@ const redText = function (e) {
 }
 const showError = function (e) {
     if (submitButtonFlag) {
-        const submitErrorSpan=document.createElement('span');
-        submitErrorSpan.textContent="Fill The Required Details";
-        submitErrorSpan.classList.add('input_error');
-        submitButton.after(submitErrorSpan);
+        const existingsubmitErrorSpan=document.querySelector('.input_error');
+        if(!existingsubmitErrorSpan)
+        {
+            const submitErrorSpan=document.createElement('span');
+            submitErrorSpan.textContent="Fill The Required Details";
+            submitErrorSpan.classList.add('input_error');
+             submitButton.after(submitErrorSpan);
+        }
+        else{
+            existingsubmitErrorSpan.textContent="Fill The Required Details";
+        }
+        
     } else {
         const existingSpan = document.querySelector('.input_error');
         if (!existingSpan) {
@@ -64,7 +72,7 @@ const showMessage = function () {
     textArea.after(mspan);
     setTimeout(() => {
         mspan.remove();
-    }, 4000)
+    }, 2500)
 }
 name.addEventListener('input', checkValid);
 email.addEventListener('input', checkValid);
