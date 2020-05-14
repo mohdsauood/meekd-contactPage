@@ -547,7 +547,7 @@ footer ul li:hover {
     }
 
     header {
-        height: 35vh;
+        height: 40vh;
     }
 
     .logo_div {
@@ -601,6 +601,7 @@ footer ul li:hover {
     .contact_form form input {
         width: 60vw;
         margin: 1.5vh auto;
+        height: 10vh;
     }
 
     .contact_form form textarea {
