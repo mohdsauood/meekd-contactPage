@@ -661,9 +661,9 @@ footer ul li:hover {
     }
 }
 
-
-
-@media only screen and (min-width: 200px) and (max-width: 480px) and (orientation:landscape) {
+/*mobile landscape media queries large viewports*/
+@media screen and (min-width:480px) and (max-width: 995px) , screen and (max-height: 400px) and (min-height: 560px) and (orientation:landscape) {
+    
     .menuButton {
         display: block;
         cursor: pointer;
@@ -682,7 +682,7 @@ footer ul li:hover {
     }
 
     header {
-        height:40vh;
+        height: 40vh;
     }
 
     .logo_div {
@@ -705,13 +705,13 @@ footer ul li:hover {
 
     header h2 {
         margin: 0 2vw;
-        font-size: 2.6rem;
+        font-size: 3.4rem;
         text-shadow: #474747 3px 5px 2px;
     }
 
     .contact_section h2 {
         margin: 0 2vw;
-        font-size: 2.6rem;
+        font-size: 3.4rem;
     }
 
     .contact_h6 {
