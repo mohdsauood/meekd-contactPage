@@ -527,7 +527,7 @@ footer ul li:hover {
 
 /*media query for landscape*/
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) and (orientation:landscape) {
     
     .menuButton {
         display: block;
@@ -577,6 +577,141 @@ footer ul li:hover {
     .contact_section h2 {
         margin: 0 2vw;
         font-size: 3.4rem;
+    }
+
+    .contact_h6 {
+        text-align: center;
+    }
+
+    .contact_content {
+        margin: 4vh 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2vw;
+    }
+
+    .contact_form form {
+        display: flex;
+        width: auto;
+        margin: 0 auto;
+        justify-content: center;
+
+    }
+
+    .contact_form form input {
+        width: 60vw;
+        margin: 1.5vh auto;
+        height: 10vh;
+    }
+
+    .contact_form form textarea {
+        height: 15vh;
+        width: 60vw;
+         margin: 1.5vh auto;
+    }
+
+    .submitButton {
+        margin: 1.5vh auto;
+        background-color: white;
+        width: 40vw;
+    }
+
+    .contact_description h5 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .contact_description p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .contact_buttons ul li {
+        width: 60vw;
+        margin: 2vh 0;
+    }
+    .addressImg{
+        text-align: center;
+    }
+    .contact_info h5 {
+   text-align: center;
+}
+    .contact_info p {
+   text-align: center;
+}
+    
+    .contact_buttons ul li{
+        margin: 1.5vh auto;
+    }
+    .contact_followus h6 {
+    text-align: center;
+}
+    footer ul li {
+        display: none;
+    }
+
+    footer {
+        justify-content: center;
+    }
+    .input_error{
+        text-align: center;
+    }
+    .message {
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 480px) and (orientation:landscape) {
+    .menuButton {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        align-self: flex-start;
+        margin: 1rem 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    header {
+        height:40vh;
+    }
+
+    .logo_div {
+        height: 10vh;
+    }
+
+    .logo_div img {
+        margin: 1vh 1vw;
+        border-radius: 20px;
+        cursor: pointer;
+        height: 80%;
+    }
+
+    header h4 {
+        color: crimson;
+        margin: 0 3vw;
+        font-size: 1.3rem;
+        text-shadow: #474747 3px 5px 2px, 2px 2px 2px rgba(206, 89, 55, 0);
+    }
+
+    header h2 {
+        margin: 0 2vw;
+        font-size: 2.6rem;
+        text-shadow: #474747 3px 5px 2px;
+    }
+
+    .contact_section h2 {
+        margin: 0 2vw;
+        font-size: 2.6rem;
     }
 
     .contact_h6 {
