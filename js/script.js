@@ -94,12 +94,13 @@ submitButton.addEventListener('click', (e) => {
         e.preventDefault();
     }
 });
+
 menuButton.addEventListener('click',()=>{
     const navElement=document.querySelector('nav ul');
     navElement.classList.toggle('displayNav');
     const navLi=document.querySelectorAll('nav li');
     navLi.forEach((item)=>{
-        item.classList.add('displayBlock');
+        item.classList.toggle('displayBlock');
     })
 })
 
